@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: black;
+    color: orange;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+    /* animation: colores 20s ease infinite forwards; */
+}
+
+.contenedor{
+    margin: 10px auto;
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    justify-content: center;
+    gap: 15px;
+}
+
+.tajeta{
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px lightgrey;
+}
+
+img{
+    border-radius: 20px;
+}
+
+img:hover{
+    animation: flotar 2s forwards;
+}
+
+@keyframes flotar {
+
+    0%{ transform: translateY(0);}
+    50%{transform: translateY(-10px);}
+    100%{transform: translateY(0px);}
+    
+}
+
+@keyframes colores{
+    0%{background-color: blue; color: white;}
+    25%{background-color: black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: orange}
+    50%{background-color: chocolate; font-family: 'Times New Roman', Times, serif; color:white;}
+    75%{background-color: green; font-family: fantasy; color: black;}
+    100%{background-color: yellow; font-family: Verdana, Geneva, Tahoma, sans-serif; color: blue;}
+}
